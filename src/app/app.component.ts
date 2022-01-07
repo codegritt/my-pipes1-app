@@ -9,4 +9,9 @@ export class AppComponent {
   title = 'my-pipes-app';
   public name = "Gokul angular";
   public message = "Welcome to angular";
+  public person={
+    "firstName": "john",
+    "lastName": "doe"
+  }
+  
 }
