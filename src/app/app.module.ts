@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
-import{AppendPipe} from './custom.pipe'
+
 
 @NgModule({
   declarations: [
@@ -11,8 +11,7 @@ import{AppendPipe} from './custom.pipe'
     TestComponent
   ],
   imports: [
-    BrowserModule,
-    AppendPipe
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
