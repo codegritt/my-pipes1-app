@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  public name = "Gokul angular";
+  public message = "Welcome to angular";
+  public person={
+    "firstName": "john",
+    "lastName": "doe"
+  }
+  
   constructor() { }
 
   ngOnInit(): void {
