@@ -13,6 +13,8 @@ export class AppComponent implements OnInit {
     "firstName": "gokul",
     "lastName": "angular"
   }
+
+  public date = new Date();
   
 
   ngOnInit(): void {
