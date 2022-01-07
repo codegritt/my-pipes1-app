@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-pipes-app';
   public name = "Gokul angular";
+  public message = "Welcome to angular";
 }
