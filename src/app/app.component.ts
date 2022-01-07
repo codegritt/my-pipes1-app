@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   public name = "Gokul angular";
   public message = "Welcome to angular";
   day=new Date();
+
   public person={
     "firstName": "gokul",
     "lastName": "angular"
