@@ -38,11 +38,11 @@ export class AppComponent implements OnInit {
   }
   makePromise(value: string): Promise<string> {
     return new Promise((resolve, reject) => {
-      setTimeout(() => resolve(value), 3000);
+      setTimeout(() => resolve(value), 8000);
     })
   }
 
   makeObservable(value: string): Observable<string> {
-    return of(value).pipe(delay(3000));
+    return of(value).pipe(delay(4000));
   }
 }
