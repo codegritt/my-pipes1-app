@@ -27,5 +27,6 @@ export class AppComponent implements OnInit {
 
   add(value: any){
     this.country.push(value);
+    console.log(this.country);
   }
 }
