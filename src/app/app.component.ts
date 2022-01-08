@@ -10,9 +10,9 @@ export class AppComponent implements OnInit {
   public name = "Gokul angular";
   public message = "Welcome to angular";
   day=new Date();
-  number1 = 1;
-  number2 = 2;
+  country:any=['india','europe','usa']
 
+  
   public person={
     "firstName": "gokul",
     "lastName": "angular"
