@@ -7,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class CustompipePipe implements PipeTransform {
 
   transform(value: any, ...args: any[]): any {
-    return value;
+    return value.join();
   }
 
 }
