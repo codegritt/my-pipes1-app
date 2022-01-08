@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { delay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,8 @@ export class AppComponent implements OnInit {
   public message = "Welcome to angular";
   day=new Date();
   country:any=['india','europe','usa']
+  asyncPromise!: Promise<string>;
+  asyncObservable!: Observable<string>;
 
 
   public person={
@@ -21,12 +25,24 @@ export class AppComponent implements OnInit {
   public date = new Date();
   
 
-  ngOnInit(): void {
-      
+  ngOnInit() {
+
+
+    this.asyncPromise = this.makePromise('Async Promise');
+    this.asyncObservable = this.makeObservable('Async Observable');
   }
 
   add(value: any){
     this.country.push(value);
     console.log(this.country);
+  }
+  makePromise(value: string): Promise<string> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve(value), 3000);
+    })
+  }
+
+  makeObservable(value: string): Observable<string> {
+    return of(value).pipe(delay(3000));
   }
 }
