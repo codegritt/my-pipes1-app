@@ -5,12 +5,15 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { UsdinrPipe } from './pipes/usdinr.pipe';
 
+import { CustompipePipe } from './custompipe.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    UsdinrPipe
+    UsdinrPipe,
+    CustompipePipe
   ],
   imports: [
     BrowserModule

@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   day=new Date();
   country:any=['india','europe','usa']
 
-  
+
   public person={
     "firstName": "gokul",
     "lastName": "angular"
@@ -23,5 +23,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
       
+  }
+
+  add(value: any){
+    this.country.push(value);
   }
 }
