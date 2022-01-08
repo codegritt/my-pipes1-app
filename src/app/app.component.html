@@ -67,8 +67,8 @@
 <h1>Pure Impure pipe</h1>
 
 <div class="container text-center">
-<input type ="text" value="">
-<button type="button">Add</button>
+<input type ="text" value="" #txtname>
+<button type="button" (click)="add(txtname.value)">Add</button>
 
-<p>{{country}}</p>
+<p>{{country|joinArray}}</p>
 </div>
