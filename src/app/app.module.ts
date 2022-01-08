@@ -8,6 +8,7 @@ import { UsdinrPipe } from './pipes/usdinr.pipe';
 import { CustompipePipe } from './custompipe.pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
