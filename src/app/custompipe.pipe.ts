@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'joinArray',
-  pure:true
+  pure:false
 })
 export class CustompipePipe implements PipeTransform {
 
